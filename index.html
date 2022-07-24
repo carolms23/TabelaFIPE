@@ -1,52 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <title>Simulador Tabela FIPE</title>
-</head>
-<body>
-    <header>
-        <h1>Tabela FIPE</h1>
-    </header>
-    <main>
-        <section class="simulator">
-            <label for="carro--automovel">Escolha o tipo de automóvel: </label>
-            <input type="radio" name="tipo--automovel" id="carro--automovel">
-            <label for="carro--automovel">Carro</label>
-            
-            <input type="radio" name="moto--automovel" id="tipo--automovel">
-            <label for="moto--automovel">Moto</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@500&family=Playfair+Display:wght@500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Simulador Tabela FIPE</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tabela FIPE</h1>
+            <img src="assets/img/3d-blue-car.png" alt="high speed" id ="blue-car"/>
+        </header>
+        <main>
+            <section class="escolha-tipo-automovel">
+                <label for="carro--automovel">Escolha o tipo de automóvel:
+                </label>
 
-            
-            <input type="radio" name="caminhao--automovel" id="tipo--automovel">
-            <label for="caminhao--automovel">Caminhão</label>
+                <div class="automovel--carro">
+                    <input type="radio" name="tipo--automovel" id="tipo--automovel">
+                    <label for="tipo--automovel">Carro</label>
+                </div>
+                
+                <div class="automovel--moto">
+                    <input type="radio" name="tipo--automovel" id="tipo--automovel">
+                    <label for="tipo--automovel">Moto</label>
+                </div>
+                
+                <div class="automovel--caminhao">
+                    <input type="radio" name="tipo--automovel" id="tipo--automovel">
+                    <label for="tipo--automovel">Caminhão</label>
+                </div>
+                
+            </section>
 
-            <label for="montadora--carro">Escolha a montadora: </label>
+            <section class="escolha-montadora">
+                <label for="montadora--carro">Escolha a montadora: </label>
+                <select name="montadora--carro" id="montadora--carro">
+                    <option value="volvo">Volvo</option>
+                </select>
 
-            <select name="montadora--carro" id="montadora--carro">
-            <option value="volvo">Volvo</option>
-            </select>
+            </section>
+                
+            <section class="escolha-modelo">
+                <label for="modelo--carro">Escolha o modelo do carro: </label>
+                <select name="modelo--carro" id="modelo--carro">
+                    <option value="volvo">Volvo</option>
+                </select>
 
+            </section>
 
-            <label for="modelo--carro">Escolha o modelo do carro: </label>
+            <section class="escolha-ano">
+                <label for="ano--carro">Escolha o ano do carro: </label>
 
-            <select name="modelo--carro" id="modelo--carro">
-            <option value="volvo">Volvo</option>
-            </select>
+                <select name="ano--carro" id="ano--carro">
+                    <option value="data">2022</option>
+                    <option value="data">2021</option>
+                    <option value="data">2020</option>
+                    <option value="data">2019</option>
+                    <option value="data">2018</option>
+                    <option value="data">2017</option>
+                    <option value="data">2016</option>
+                    <option value="data">2015</option>
+                    <option value="data">2014</option>
+                    <option value="data">2013</option>
+                    <option value="data">2012</option>
+                    <option value="data">2011</option>
+                    <option value="data">2010</option>
+                    <option value="data">2009</option>
+                    <option value="data">2008</option>
+                    <option value="data">2007</option>
+                    <option value="data">2006</option>
+                    <option value="data">2005</option>
+                    <option value="data">2004</option>
+                    <option value="data">2003</option>
+                    <option value="data">2002</option>
+                    <option value="data">2001</option>
+                    <option value="data">2000</option>
+                    <option value="data">1999</option>
+                    <option value="data">1998</option>
+                    <option value="data">1997</option>
+                    <option value="data">1996</option>
+                    <option value="data">1995</option>
+                    <option value="data">1994</option>
+                    <option value="data">1993</option>
+                    <option value="data">1992</option>
+                    <option value="data">1991</option>
+                    <option value="data">1990</option>
+    
+    
+                </select>
+    
+    
+            </section>
 
-            
-        </section>
+        </main>
+        <footer>
 
-    </main>
-    <footer>
-
-    </footer>
-    <script type="module" src="assets/js/script.js"></script>
-</body>
+        </footer>
+        <script type="module" src="assets/js/script.js"></script>
+    </body>
 </html>
