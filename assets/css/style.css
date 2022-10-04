@@ -79,7 +79,7 @@ input[type="radio"]:checked::before {
     align-items: center;
 }
 select{
-    width:16rem;
+
     height:2rem;
     border-color: none;
 }
