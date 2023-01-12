@@ -41,6 +41,13 @@ main{
 main > section{
     padding: 2rem;
 }
+
+.tipo-veiculo{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
 input[type="radio"]{
     appearance:none;
     font: inherit;
@@ -50,6 +57,7 @@ input[type="radio"]{
     border: 0.15em solid currentColor;
     border-radius: 50%;
     transform: translateY(-0.075em);
+
 }
 input[type="radio"] {
     /* ...existing styles */
